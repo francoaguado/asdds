@@ -1,39 +1,7 @@
 
-@font-face{
-    font-family:League;
-    src: url(/font/League.otf) format('otf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
 
-@font-face{
-    font-family:IBM;
-    src: url(/font/IBM.ttf) format('ttf');
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
-
-@font-face {
-	font-family: PT Serif;
-	src: url(/font/PTSerif-Bold.ttf) url(/font/PTSerif-Regular.ttf) format('ttf');
-
-}
-
-/*@font-face {
-	font-family: PT Serif;
-	src: url(/font/PTSerif-Bold.ttf) format('ttf');*/
-
-}
-
-@font-face{
-    font-family:Inter-Regular;
-    src: url(/font/Inter-Regular.ttf) format('ttf');
-}
-
-@font-face{
-    font-family:Inter-Bold;
-    src: url(/font/Inter-Bold.ttf) format('ttf');
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 
 
 *{
@@ -45,8 +13,8 @@
 
 
 body {
-	font-family: "PT Serif", Serif;
-	font-weight: normal;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
 	font-size: 18px;
 	line-height: 170%;
 	}
@@ -58,6 +26,7 @@ body {
 	height: auto;
 	margin: 0 auto;
 	padding-top: 72px;
+	padding-bottom: 50px;
 	overflow: hidden;
 
 	/* Flex */
@@ -71,7 +40,6 @@ body {
 }
 
 .header {
-	
 
 	/* Flex */
 	display: flex;
@@ -80,24 +48,23 @@ body {
 }
 
 
-.Nombre {
-	font-family: Inter, sans-serif;
+
+.Fecha {
+	font-family: 'Inter', sans-serif;
 	font-weight: normal;
 	line-height: 140%;
 	font-size: 14px;
 	display: inline-block;
-	margin: 9px 0 0 7px;
-	
-
+	margin: 20px 0 0 7px;
 }
 
-.logo {
-
+.Fecha b {
+	font-weight: 700;
 }
 
 .logo img {
-	width: 41px;
-  	height: 55px;
+	width: 80px;
+  	height: 80px;
   	object-fit: cover;
   	vertical-align: top;
   	
@@ -106,131 +73,177 @@ body {
 
 /* INTRODUCCIÓN */
 
-.intro h1 {
-
-	margin: 75px 0 60px 0px;
-}
-
-.intro span {
-	font-family: Inter, sans-serif;
-	font-weight: normal;
-	font-size: 40px;
-	letter-spacing: -2px;
-}
-
-.intro p {
-	font-size: 1.1rem; /*20*/
-	line-height: 160%;
+.intro { width: 100%;}
+h1 {
+	font-family: 'Inter',sans-serif;
+	font-weight: 400;
+	font-size: 34px;
+	line-height: 140%;
+	color: #7D7D7D;
+	margin: 75px 0 96px 0px;
 
 }
 
 hr {
 	border-color: #E4E4E4;
 	opacity: 40%;
-	margin-top: 50px;
+	margin-top: 5px;
 	height: 1px;
 	width: 200px;
 }
 
-/* H's Fonts */
-
-h1 {
-	font-family: "League Spartan", sans-serif;
-	font-size: 1.94rem; /*35px*/
-	line-height: 2.7rem; /*140%*/
-	text-transform: uppercase;
-
-}
-
-
-/* Informe */
-
-
-
-h2, h3 {
-	font-family: Inter;
-	font-weight: bold;
+h2  {
+	font-family: 'Inter',sans-serif;
+	font-weight: 400;
 	line-height: 140%;
-	margin-bottom: 30px;
-	margin-top: 120px; 
-
-}
-	/*margin: 40px 0 20px 0;/*
-
-
-/*h2:nth-frist-child(1){
-	margin-top: 0px;
-}*/
-
-h2 {
-	font-size: 22px;
-}
-
-h3 {
-	font-size: 15px;
-}
-
-.informe p span {
-
-	font-family: "PT Serif", Serif;
-	font-weight: bold;
+	color: black;
+	font-size: 27px;
+	margin-bottom: 60px;
 }
 
 
+/* Cronograma */
 
 
-/* Tabla */
-
+/* TABLA */
 table {
-	margin: 50px 0 50px 0;
-	text-align: left;
 	width: 100%;
+	margin: 12px 0 140px 0;
+	text-align: left;
 	border-collapse: collapse;
 
-
 }
 
-th, td {
-	padding: 20px;
+th,td {
+	font-family: 'Inter',sans-serif;
+	font-weight: 400;
 }
+
+/* Encabezados: "Desde las" y "Días"+"Jueves 25" ej*/
 
 thead {
-	font-family: Inter, sans-serif;
-	font-weight: normal;
-	border-bottom: 2px solid #dee2e6;
-	border-top: 1px solid #F2F2F2;
+	border-bottom: 2px solid black;
+	border-top: 2px solid black;
+	line-height: 100%;
 }
 
-tbody span {
-	font-variant: small;
+th {
+	font-size: 12px;
+	padding: 40px 25px;
 }
 
-tbody tr:nth-child(odd){
-	background-color: #F2F2F2;
+.desde-las {
+	padding: 0 50px 0px 15px;
 }
 
-tbody tr:nth-last-child(1){
-	border-bottom: 1px solid #f2f2f2;
+.dia, .dia-s, .dia-d {font-weight: 400; margin-left: 4px; font-size: 14px;margin-bottom:5px;}
+
+.dia-s {
+	margin-left: 2px;
+}
+
+.dia-d { margin-left: 1px;}
+th span {
+	font-weight: 700;
+	font-size: 18px;
+}
+
+/* Fin de Encabezado // Comienzo Actividades */
+
+.pr {margin-top: 60px;}
+
+tbody .l {
+padding-left: 25px;
+}
+
+td {
+font-size: 14px;
+padding: 25px 0 40px 15px;
+
+} 
+
+/*Circulos */
+/*Grande <span class="cG"></span>*/
+.cG {
+	width: 15px;
+	height: 15px;
+	left: -8px;
+	bottom: 50%;
+
+}
+
+/*Circulo Chico <span></span>*/
+td span {
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	background-color: #F29109;
+	position: absolute;
+	left: -6px;
+	bottom: 50%;
+
+}
+
+.circulo-final {
+	position: absolute;
+	bottom: 0;
 }
 
 
-/* Listas */
 
-ul, li {
-	margin: 12px;
-}
+/**/
 
-.ul-padding {
-	padding-bottom: 5px;
-}
-
-h2 span {
-	font-size: 14px;
+/*linea naranja*/
+.l {
+	border-left: 2px solid #F29109;
+	position: relative;
 }
 
 
+/*ESTILO TEXTO COLUMNAS DE ACTIVIDADES */
+/* Texto Nivel 1 */
+.t1 {
+	font: 700 18px/160% 'Merriweather', serif;
+}
+
+/*Texto Nivel 2*/
+.t2 {
+	font: 500 15px 'Inter', sans-serif;
+}
+
+/*Texto Nivel 3*/
+.t3 {
+	font: 400 15px/150% 'Inter', sans-serif;
+}
+
+/*Variante Inter Ligth*/
+
+.t4 {
+	font: 300 15px 'Inter', sans-serif;
+}
+
+.p {
+	padding-top: 15px;
+}
 
 
+/*footer*/
+
+a {
+	text-decoration: none;
+	color: #F29109;
+	padding: 4px 0 0 0;
+}
+
+h3, h4 {
+	padding: 10px;
+}
+ .t5 {
+	 font-size: 14px;
+	 font-weight: 300;
+ }
+
+/* Queries */
 
 @media screen and (max-width: 575.98px) { 
 
@@ -272,12 +285,24 @@ h2 span {
 /* Cambia la fuenta de los titulares en dispositivios mobiles */
 @media screen and (min-width: 320px) and (max-width: 991.98px) {
 
-h2 {
-	font-size: 19px;
+.logo img {
+	width: 150px;
+	height: 154px;
+
 }
 
-h3 {
-	font-size: 15px;
+
+.Fecha {
+	font-size: 18px;
+	margin: 40px 0 0 14px;
+}
+
+h1 {
+	font-size: 27px;
+}
+
+h1 span {
+	font-size: 20px;
 }
 
 }
